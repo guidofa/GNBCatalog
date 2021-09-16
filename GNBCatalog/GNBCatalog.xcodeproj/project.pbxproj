@@ -114,6 +114,49 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		C50278C026F3B2CC0033CC05 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C502AE4326F3B0E100E8C9AA /* Main.storyboard */,
+				C502AE4826F3B0E200E8C9AA /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		C50278C126F3B2D70033CC05 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				C502AE4626F3B0E200E8C9AA /* Assets.xcassets */,
+				C502AE4B26F3B0E200E8C9AA /* Info.plist */,
+				C50278C426F3B2F50033CC05 /* Delegates */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		C50278C226F3B2DF0033CC05 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				C502AE4126F3B0E100E8C9AA /* ViewController.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		C50278C326F3B2E40033CC05 /* Datalayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Datalayer;
+			sourceTree = "<group>";
+		};
+		C50278C426F3B2F50033CC05 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				C502AE3D26F3B0E100E8C9AA /* AppDelegate.swift */,
+				C502AE3F26F3B0E100E8C9AA /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
 		C502AE3126F3B0E100E8C9AA = {
 			isa = PBXGroup;
 			children = (
@@ -139,13 +182,10 @@
 		C502AE3C26F3B0E100E8C9AA /* GNBCatalog */ = {
 			isa = PBXGroup;
 			children = (
-				C502AE3D26F3B0E100E8C9AA /* AppDelegate.swift */,
-				C502AE3F26F3B0E100E8C9AA /* SceneDelegate.swift */,
-				C502AE4126F3B0E100E8C9AA /* ViewController.swift */,
-				C502AE4326F3B0E100E8C9AA /* Main.storyboard */,
-				C502AE4626F3B0E200E8C9AA /* Assets.xcassets */,
-				C502AE4826F3B0E200E8C9AA /* LaunchScreen.storyboard */,
-				C502AE4B26F3B0E200E8C9AA /* Info.plist */,
+				C50278C326F3B2E40033CC05 /* Datalayer */,
+				C50278C226F3B2DF0033CC05 /* Modules */,
+				C50278C126F3B2D70033CC05 /* SupportFiles */,
+				C50278C026F3B2CC0033CC05 /* Storyboards */,
 			);
 			path = GNBCatalog;
 			sourceTree = "<group>";
@@ -570,7 +610,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FHFAG7LFX8;
-				INFOPLIST_FILE = GNBCatalog/Info.plist;
+				INFOPLIST_FILE = GNBCatalog/SupportFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -590,7 +630,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FHFAG7LFX8;
-				INFOPLIST_FILE = GNBCatalog/Info.plist;
+				INFOPLIST_FILE = GNBCatalog/SupportFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
