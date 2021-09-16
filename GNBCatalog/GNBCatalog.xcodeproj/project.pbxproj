@@ -10,6 +10,9 @@
 		604C1C43F0F9D301484FEFD4 /* Pods_GNBCatalog_GNBCatalogUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ECD7A82FACECBD13B41D57A /* Pods_GNBCatalog_GNBCatalogUITests.framework */; };
 		6F22AC4DBBFBF350A70B3F24 /* Pods_GNBCatalog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DC7570BA372264DE53F1E96 /* Pods_GNBCatalog.framework */; };
 		83118A0EA8A8AF02E2031C6F /* Pods_GNBCatalogTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F56087E3F86B865C3F57384 /* Pods_GNBCatalogTests.framework */; };
+		C50278CE26F3B3B20033CC05 /* RateEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50278CD26F3B3B20033CC05 /* RateEntity.swift */; };
+		C50278D726F3B7E40033CC05 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50278D626F3B7E40033CC05 /* Network.swift */; };
+		C50278DF26F3B8520033CC05 /* ProductEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50278DE26F3B8520033CC05 /* ProductEntity.swift */; };
 		C502AE3E26F3B0E100E8C9AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C502AE3D26F3B0E100E8C9AA /* AppDelegate.swift */; };
 		C502AE4026F3B0E100E8C9AA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C502AE3F26F3B0E100E8C9AA /* SceneDelegate.swift */; };
 		C502AE4226F3B0E100E8C9AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C502AE4126F3B0E100E8C9AA /* ViewController.swift */; };
@@ -46,6 +49,9 @@
 		9DC7570BA372264DE53F1E96 /* Pods_GNBCatalog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GNBCatalog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF5ECC25BA07776C3A22F1B0 /* Pods-GNBCatalog-GNBCatalogUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNBCatalog-GNBCatalogUITests.debug.xcconfig"; path = "Target Support Files/Pods-GNBCatalog-GNBCatalogUITests/Pods-GNBCatalog-GNBCatalogUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		BFBB4DACE3CC77D12DD8B356 /* Pods-GNBCatalog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNBCatalog.debug.xcconfig"; path = "Target Support Files/Pods-GNBCatalog/Pods-GNBCatalog.debug.xcconfig"; sourceTree = "<group>"; };
+		C50278CD26F3B3B20033CC05 /* RateEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateEntity.swift; sourceTree = "<group>"; };
+		C50278D626F3B7E40033CC05 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		C50278DE26F3B8520033CC05 /* ProductEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductEntity.swift; sourceTree = "<group>"; };
 		C502AE3A26F3B0E100E8C9AA /* GNBCatalog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GNBCatalog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C502AE3D26F3B0E100E8C9AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C502AE3F26F3B0E100E8C9AA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -144,6 +150,8 @@
 		C50278C326F3B2E40033CC05 /* Datalayer */ = {
 			isa = PBXGroup;
 			children = (
+				C50278D526F3B7D60033CC05 /* Network */,
+				C50278CC26F3B3670033CC05 /* Entities */,
 			);
 			path = Datalayer;
 			sourceTree = "<group>";
@@ -155,6 +163,23 @@
 				C502AE3F26F3B0E100E8C9AA /* SceneDelegate.swift */,
 			);
 			path = Delegates;
+			sourceTree = "<group>";
+		};
+		C50278CC26F3B3670033CC05 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				C50278DE26F3B8520033CC05 /* ProductEntity.swift */,
+				C50278CD26F3B3B20033CC05 /* RateEntity.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		C50278D526F3B7D60033CC05 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C50278D626F3B7E40033CC05 /* Network.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		C502AE3126F3B0E100E8C9AA = {
@@ -429,6 +454,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C50278DF26F3B8520033CC05 /* ProductEntity.swift in Sources */,
+				C50278D726F3B7E40033CC05 /* Network.swift in Sources */,
+				C50278CE26F3B3B20033CC05 /* RateEntity.swift in Sources */,
 				C502AE4226F3B0E100E8C9AA /* ViewController.swift in Sources */,
 				C502AE3E26F3B0E100E8C9AA /* AppDelegate.swift in Sources */,
 				C502AE4026F3B0E100E8C9AA /* SceneDelegate.swift in Sources */,
