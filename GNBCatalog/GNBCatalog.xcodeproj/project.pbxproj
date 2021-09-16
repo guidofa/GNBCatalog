@@ -13,9 +13,14 @@
 		C50278CE26F3B3B20033CC05 /* RateEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50278CD26F3B3B20033CC05 /* RateEntity.swift */; };
 		C50278D726F3B7E40033CC05 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50278D626F3B7E40033CC05 /* Network.swift */; };
 		C50278DF26F3B8520033CC05 /* ProductEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50278DE26F3B8520033CC05 /* ProductEntity.swift */; };
+		C50278E526F3C7090033CC05 /* ListModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50278E426F3C7090033CC05 /* ListModule.swift */; };
+		C50278ED26F3C8AC0033CC05 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50278EC26F3C8AC0033CC05 /* ListViewController.swift */; };
+		C50278F226F3C8B50033CC05 /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50278F126F3C8B50033CC05 /* ListPresenter.swift */; };
+		C50278F726F3C8C20033CC05 /* ListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50278F626F3C8C20033CC05 /* ListInteractor.swift */; };
+		C50278FC26F3C8CC0033CC05 /* ListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50278FB26F3C8CC0033CC05 /* ListRouter.swift */; };
+		C502790126F3CBC70033CC05 /* BaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C502790026F3CBC70033CC05 /* BaseProtocol.swift */; };
 		C502AE3E26F3B0E100E8C9AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C502AE3D26F3B0E100E8C9AA /* AppDelegate.swift */; };
 		C502AE4026F3B0E100E8C9AA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C502AE3F26F3B0E100E8C9AA /* SceneDelegate.swift */; };
-		C502AE4226F3B0E100E8C9AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C502AE4126F3B0E100E8C9AA /* ViewController.swift */; };
 		C502AE4526F3B0E100E8C9AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C502AE4326F3B0E100E8C9AA /* Main.storyboard */; };
 		C502AE4726F3B0E200E8C9AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C502AE4626F3B0E200E8C9AA /* Assets.xcassets */; };
 		C502AE4A26F3B0E200E8C9AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C502AE4826F3B0E200E8C9AA /* LaunchScreen.storyboard */; };
@@ -52,10 +57,15 @@
 		C50278CD26F3B3B20033CC05 /* RateEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateEntity.swift; sourceTree = "<group>"; };
 		C50278D626F3B7E40033CC05 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		C50278DE26F3B8520033CC05 /* ProductEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductEntity.swift; sourceTree = "<group>"; };
+		C50278E426F3C7090033CC05 /* ListModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListModule.swift; sourceTree = "<group>"; };
+		C50278EC26F3C8AC0033CC05 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		C50278F126F3C8B50033CC05 /* ListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
+		C50278F626F3C8C20033CC05 /* ListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListInteractor.swift; sourceTree = "<group>"; };
+		C50278FB26F3C8CC0033CC05 /* ListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRouter.swift; sourceTree = "<group>"; };
+		C502790026F3CBC70033CC05 /* BaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseProtocol.swift; sourceTree = "<group>"; };
 		C502AE3A26F3B0E100E8C9AA /* GNBCatalog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GNBCatalog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C502AE3D26F3B0E100E8C9AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C502AE3F26F3B0E100E8C9AA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C502AE4126F3B0E100E8C9AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C502AE4426F3B0E100E8C9AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C502AE4626F3B0E200E8C9AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C502AE4926F3B0E200E8C9AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -142,7 +152,8 @@
 		C50278C226F3B2DF0033CC05 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				C502AE4126F3B0E100E8C9AA /* ViewController.swift */,
+				C50278E326F3B8BA0033CC05 /* ListModule */,
+				C502790026F3CBC70033CC05 /* BaseProtocol.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -180,6 +191,18 @@
 				C50278D626F3B7E40033CC05 /* Network.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		C50278E326F3B8BA0033CC05 /* ListModule */ = {
+			isa = PBXGroup;
+			children = (
+				C50278E426F3C7090033CC05 /* ListModule.swift */,
+				C50278EC26F3C8AC0033CC05 /* ListViewController.swift */,
+				C50278F126F3C8B50033CC05 /* ListPresenter.swift */,
+				C50278F626F3C8C20033CC05 /* ListInteractor.swift */,
+				C50278FB26F3C8CC0033CC05 /* ListRouter.swift */,
+			);
+			path = ListModule;
 			sourceTree = "<group>";
 		};
 		C502AE3126F3B0E100E8C9AA = {
@@ -455,11 +478,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				C50278DF26F3B8520033CC05 /* ProductEntity.swift in Sources */,
+				C50278E526F3C7090033CC05 /* ListModule.swift in Sources */,
+				C50278F226F3C8B50033CC05 /* ListPresenter.swift in Sources */,
+				C50278F726F3C8C20033CC05 /* ListInteractor.swift in Sources */,
 				C50278D726F3B7E40033CC05 /* Network.swift in Sources */,
 				C50278CE26F3B3B20033CC05 /* RateEntity.swift in Sources */,
-				C502AE4226F3B0E100E8C9AA /* ViewController.swift in Sources */,
 				C502AE3E26F3B0E100E8C9AA /* AppDelegate.swift in Sources */,
 				C502AE4026F3B0E100E8C9AA /* SceneDelegate.swift in Sources */,
+				C50278FC26F3C8CC0033CC05 /* ListRouter.swift in Sources */,
+				C50278ED26F3C8AC0033CC05 /* ListViewController.swift in Sources */,
+				C502790126F3CBC70033CC05 /* BaseProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
