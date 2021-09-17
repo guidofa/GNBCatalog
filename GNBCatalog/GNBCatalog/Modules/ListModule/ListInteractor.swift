@@ -23,7 +23,6 @@ class ListInteractor: ListModule.Interactor, ListInteractorProtocol {
                 self.parse(jsonData: data)
             case .failure(let error):
                 print(error)
-//                self.presenter?.getGnomeFailed(message: error.localizedDescription)
             }
         }
     }
@@ -32,8 +31,6 @@ class ListInteractor: ListModule.Interactor, ListInteractorProtocol {
         do {
             let decodedData = try JSONDecoder().decode([TransactionEntity].self, from: jsonData)
             presenter?.getTransactionsSuccess(data: decodedData)
-            print(decodedData.count)
-//            presenter?.getGnomesSuccess(data: decodedData.Brastlewark)
         } catch {
             print("Che esta salientdo por aca")
         }

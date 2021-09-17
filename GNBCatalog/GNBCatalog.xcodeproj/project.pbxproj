@@ -26,6 +26,7 @@
 		C502AE4A26F3B0E200E8C9AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C502AE4826F3B0E200E8C9AA /* LaunchScreen.storyboard */; };
 		C502AE5526F3B0E200E8C9AA /* GNBCatalogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C502AE5426F3B0E200E8C9AA /* GNBCatalogTests.swift */; };
 		C502AE6026F3B0E200E8C9AA /* GNBCatalogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C502AE5F26F3B0E200E8C9AA /* GNBCatalogUITests.swift */; };
+		C5FAC23C26F4E2120072485D /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FAC23B26F4E2120072485D /* ProductCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		C502AE5B26F3B0E200E8C9AA /* GNBCatalogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GNBCatalogUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C502AE5F26F3B0E200E8C9AA /* GNBCatalogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNBCatalogUITests.swift; sourceTree = "<group>"; };
 		C502AE6126F3B0E200E8C9AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5FAC23B26F4E2120072485D /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		E6A5680749CE68E9E82F61B4 /* Pods-GNBCatalog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNBCatalog.release.xcconfig"; path = "Target Support Files/Pods-GNBCatalog/Pods-GNBCatalog.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -196,6 +198,7 @@
 		C50278E326F3B8BA0033CC05 /* ListModule */ = {
 			isa = PBXGroup;
 			children = (
+				C5FAC23A26F4E2020072485D /* Cells */,
 				C50278E426F3C7090033CC05 /* ListModule.swift */,
 				C50278EC26F3C8AC0033CC05 /* ListViewController.swift */,
 				C50278F126F3C8B50033CC05 /* ListPresenter.swift */,
@@ -254,6 +257,14 @@
 				C502AE6126F3B0E200E8C9AA /* Info.plist */,
 			);
 			path = GNBCatalogUITests;
+			sourceTree = "<group>";
+		};
+		C5FAC23A26F4E2020072485D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C5FAC23B26F4E2120072485D /* ProductCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -486,6 +497,7 @@
 				C502AE3E26F3B0E100E8C9AA /* AppDelegate.swift in Sources */,
 				C502AE4026F3B0E100E8C9AA /* SceneDelegate.swift in Sources */,
 				C50278FC26F3C8CC0033CC05 /* ListRouter.swift in Sources */,
+				C5FAC23C26F4E2120072485D /* ProductCell.swift in Sources */,
 				C50278ED26F3C8AC0033CC05 /* ListViewController.swift in Sources */,
 				C502790126F3CBC70033CC05 /* BaseProtocol.swift in Sources */,
 			);

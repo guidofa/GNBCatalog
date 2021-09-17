@@ -10,5 +10,5 @@ import Foundation
 struct RateEntity: Codable {
     var from: String
     var to: String
-    var rate: Decimal
+    var rate: String
 }
