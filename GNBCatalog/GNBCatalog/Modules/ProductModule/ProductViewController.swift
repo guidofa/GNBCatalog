@@ -8,7 +8,7 @@
 import UIKit
 
 protocol ProductViewProtocol: ProductViewController {
-    
+    func setProduct(product: TransactionEntity)
 }
 
 class ProductViewController: ProductModule.View, ProductViewProtocol {
@@ -21,8 +21,15 @@ class ProductViewController: ProductModule.View, ProductViewProtocol {
         return ProductViewController()
     }
     
+    fileprivate var product: TransactionEntity?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        presenter?.getProduct()
         presenter?.getRates()
+    }
+    
+    func setProduct(product: TransactionEntity) {
+        self.product = product
     }
 }

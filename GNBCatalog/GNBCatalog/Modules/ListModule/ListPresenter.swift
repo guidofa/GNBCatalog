@@ -10,7 +10,7 @@ import UIKit
 protocol ListPresenterProtocol: NSObject {
     func getProducts()
     func getTransactionsSuccess(data: [TransactionEntity])
-    func goToProductDetail()
+    func goToProductDetail(product: TransactionEntity)
     var navigation: UINavigationController? { get }
 }
 
@@ -46,7 +46,7 @@ class ListPresenter: ListModule.Presenter, ListPresenterProtocol {
         return uniqueProducts
     }
     
-    func goToProductDetail() {
-        router?.goToProductDetail()
+    func goToProductDetail(product: TransactionEntity) {
+        router?.goToProductDetail(product: product)
     }
 }

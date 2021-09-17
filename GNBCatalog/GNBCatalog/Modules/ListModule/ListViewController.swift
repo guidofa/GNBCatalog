@@ -56,6 +56,7 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        presenter?.goToProductDetail()
+        guard let products = products else { return }
+        presenter?.goToProductDetail(product: products[indexPath.row])
     }
 }
