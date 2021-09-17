@@ -69,6 +69,35 @@
             </objects>
             <point key="canvasLocation" x="124.6376811594203" y="88.392857142857139"/>
         </scene>
+        <!--Product View Controller-->
+        <scene sceneID="a0x-sI-NAg">
+            <objects>
+                <viewController storyboardIdentifier="ProductViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="cEt-ur-Kf1" customClass="ProductViewController" customModule="GNBCatalog" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xbk-6h-uyP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hola" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bv-eP-dPO">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oev-9Y-lji"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9bv-eP-dPO" firstAttribute="leading" secondItem="oev-9Y-lji" secondAttribute="leading" id="1Fc-dl-gml"/>
+                            <constraint firstItem="9bv-eP-dPO" firstAttribute="top" secondItem="oev-9Y-lji" secondAttribute="top" id="BR7-Iu-ygM"/>
+                            <constraint firstItem="oev-9Y-lji" firstAttribute="bottom" secondItem="9bv-eP-dPO" secondAttribute="bottom" id="u1v-cl-Kaw"/>
+                            <constraint firstItem="oev-9Y-lji" firstAttribute="trailing" secondItem="9bv-eP-dPO" secondAttribute="trailing" id="ySQ-L6-BYm"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bbC-7e-7vp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1078" y="12"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">

@@ -18,7 +18,6 @@
 		C50278F226F3C8B50033CC05 /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50278F126F3C8B50033CC05 /* ListPresenter.swift */; };
 		C50278F726F3C8C20033CC05 /* ListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50278F626F3C8C20033CC05 /* ListInteractor.swift */; };
 		C50278FC26F3C8CC0033CC05 /* ListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50278FB26F3C8CC0033CC05 /* ListRouter.swift */; };
-		C502790126F3CBC70033CC05 /* BaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C502790026F3CBC70033CC05 /* BaseProtocol.swift */; };
 		C502AE3E26F3B0E100E8C9AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C502AE3D26F3B0E100E8C9AA /* AppDelegate.swift */; };
 		C502AE4026F3B0E100E8C9AA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C502AE3F26F3B0E100E8C9AA /* SceneDelegate.swift */; };
 		C502AE4526F3B0E100E8C9AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C502AE4326F3B0E100E8C9AA /* Main.storyboard */; };
@@ -27,6 +26,11 @@
 		C502AE5526F3B0E200E8C9AA /* GNBCatalogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C502AE5426F3B0E200E8C9AA /* GNBCatalogTests.swift */; };
 		C502AE6026F3B0E200E8C9AA /* GNBCatalogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C502AE5F26F3B0E200E8C9AA /* GNBCatalogUITests.swift */; };
 		C5FAC23C26F4E2120072485D /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FAC23B26F4E2120072485D /* ProductCell.swift */; };
+		C5FAC24526F4E3F80072485D /* ProductModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FAC24426F4E3F80072485D /* ProductModule.swift */; };
+		C5FAC24D26F4E4070072485D /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FAC24C26F4E4070072485D /* ProductViewController.swift */; };
+		C5FAC25226F4E40F0072485D /* ProductPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FAC25126F4E40F0072485D /* ProductPresenter.swift */; };
+		C5FAC25726F4E41B0072485D /* ProductInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FAC25626F4E41B0072485D /* ProductInteractor.swift */; };
+		C5FAC25C26F4E4240072485D /* ProductRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FAC25B26F4E4240072485D /* ProductRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,7 +67,6 @@
 		C50278F126F3C8B50033CC05 /* ListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
 		C50278F626F3C8C20033CC05 /* ListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListInteractor.swift; sourceTree = "<group>"; };
 		C50278FB26F3C8CC0033CC05 /* ListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRouter.swift; sourceTree = "<group>"; };
-		C502790026F3CBC70033CC05 /* BaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseProtocol.swift; sourceTree = "<group>"; };
 		C502AE3A26F3B0E100E8C9AA /* GNBCatalog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GNBCatalog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C502AE3D26F3B0E100E8C9AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C502AE3F26F3B0E100E8C9AA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +81,11 @@
 		C502AE5F26F3B0E200E8C9AA /* GNBCatalogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNBCatalogUITests.swift; sourceTree = "<group>"; };
 		C502AE6126F3B0E200E8C9AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5FAC23B26F4E2120072485D /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		C5FAC24426F4E3F80072485D /* ProductModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModule.swift; sourceTree = "<group>"; };
+		C5FAC24C26F4E4070072485D /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
+		C5FAC25126F4E40F0072485D /* ProductPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductPresenter.swift; sourceTree = "<group>"; };
+		C5FAC25626F4E41B0072485D /* ProductInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductInteractor.swift; sourceTree = "<group>"; };
+		C5FAC25B26F4E4240072485D /* ProductRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRouter.swift; sourceTree = "<group>"; };
 		E6A5680749CE68E9E82F61B4 /* Pods-GNBCatalog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNBCatalog.release.xcconfig"; path = "Target Support Files/Pods-GNBCatalog/Pods-GNBCatalog.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -155,7 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				C50278E326F3B8BA0033CC05 /* ListModule */,
-				C502790026F3CBC70033CC05 /* BaseProtocol.swift */,
+				C5FAC24326F4E3D00072485D /* ProductModule */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -265,6 +273,18 @@
 				C5FAC23B26F4E2120072485D /* ProductCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		C5FAC24326F4E3D00072485D /* ProductModule */ = {
+			isa = PBXGroup;
+			children = (
+				C5FAC24426F4E3F80072485D /* ProductModule.swift */,
+				C5FAC24C26F4E4070072485D /* ProductViewController.swift */,
+				C5FAC25126F4E40F0072485D /* ProductPresenter.swift */,
+				C5FAC25626F4E41B0072485D /* ProductInteractor.swift */,
+				C5FAC25B26F4E4240072485D /* ProductRouter.swift */,
+			);
+			path = ProductModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -491,15 +511,19 @@
 				C50278DF26F3B8520033CC05 /* TransactionEntity.swift in Sources */,
 				C50278E526F3C7090033CC05 /* ListModule.swift in Sources */,
 				C50278F226F3C8B50033CC05 /* ListPresenter.swift in Sources */,
+				C5FAC24526F4E3F80072485D /* ProductModule.swift in Sources */,
 				C50278F726F3C8C20033CC05 /* ListInteractor.swift in Sources */,
 				C50278D726F3B7E40033CC05 /* Network.swift in Sources */,
 				C50278CE26F3B3B20033CC05 /* RateEntity.swift in Sources */,
 				C502AE3E26F3B0E100E8C9AA /* AppDelegate.swift in Sources */,
+				C5FAC25C26F4E4240072485D /* ProductRouter.swift in Sources */,
 				C502AE4026F3B0E100E8C9AA /* SceneDelegate.swift in Sources */,
 				C50278FC26F3C8CC0033CC05 /* ListRouter.swift in Sources */,
+				C5FAC24D26F4E4070072485D /* ProductViewController.swift in Sources */,
 				C5FAC23C26F4E2120072485D /* ProductCell.swift in Sources */,
 				C50278ED26F3C8AC0033CC05 /* ListViewController.swift in Sources */,
-				C502790126F3CBC70033CC05 /* BaseProtocol.swift in Sources */,
+				C5FAC25726F4E41B0072485D /* ProductInteractor.swift in Sources */,
+				C5FAC25226F4E40F0072485D /* ProductPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -5,11 +5,13 @@
 //  Created by Guido Fabio on 16/09/2021.
 //
 
-import Foundation
+import UIKit
 
-protocol ListPresenterProtocol: BasePresenterProtocol {
+protocol ListPresenterProtocol: NSObject {
     func getProducts()
     func getTransactionsSuccess(data: [TransactionEntity])
+    func goToProductDetail()
+    var navigation: UINavigationController? { get }
 }
 
 class ListPresenter: ListModule.Presenter, ListPresenterProtocol {
@@ -42,5 +44,9 @@ class ListPresenter: ListModule.Presenter, ListPresenterProtocol {
             previousTransaction = transaction
         }
         return uniqueProducts
+    }
+    
+    func goToProductDetail() {
+        router?.goToProductDetail()
     }
 }
