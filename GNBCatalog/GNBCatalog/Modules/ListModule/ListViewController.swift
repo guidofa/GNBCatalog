@@ -20,4 +20,9 @@ class ListViewController: ListModule.View, ListViewProtocol {
         }
         return ListViewController()
     }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        presenter?.getTransactions()
+    }
 }

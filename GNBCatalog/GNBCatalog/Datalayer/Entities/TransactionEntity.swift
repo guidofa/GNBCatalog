@@ -1,5 +1,5 @@
 //
-//  ProductEntity.swift
+//  TransactionEntity.swift
 //  GNBCatalog
 //
 //  Created by Guido Fabio on 16/09/2021.
@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct ProductEntity: Codable {
+struct TransactionEntity: Codable {
     var sku: String
-    var amount: Decimal
+    var amount: String
     var currency: String
 }

@@ -12,7 +12,7 @@
 		83118A0EA8A8AF02E2031C6F /* Pods_GNBCatalogTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F56087E3F86B865C3F57384 /* Pods_GNBCatalogTests.framework */; };
 		C50278CE26F3B3B20033CC05 /* RateEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50278CD26F3B3B20033CC05 /* RateEntity.swift */; };
 		C50278D726F3B7E40033CC05 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50278D626F3B7E40033CC05 /* Network.swift */; };
-		C50278DF26F3B8520033CC05 /* ProductEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50278DE26F3B8520033CC05 /* ProductEntity.swift */; };
+		C50278DF26F3B8520033CC05 /* TransactionEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50278DE26F3B8520033CC05 /* TransactionEntity.swift */; };
 		C50278E526F3C7090033CC05 /* ListModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50278E426F3C7090033CC05 /* ListModule.swift */; };
 		C50278ED26F3C8AC0033CC05 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50278EC26F3C8AC0033CC05 /* ListViewController.swift */; };
 		C50278F226F3C8B50033CC05 /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50278F126F3C8B50033CC05 /* ListPresenter.swift */; };
@@ -56,7 +56,7 @@
 		BFBB4DACE3CC77D12DD8B356 /* Pods-GNBCatalog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNBCatalog.debug.xcconfig"; path = "Target Support Files/Pods-GNBCatalog/Pods-GNBCatalog.debug.xcconfig"; sourceTree = "<group>"; };
 		C50278CD26F3B3B20033CC05 /* RateEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateEntity.swift; sourceTree = "<group>"; };
 		C50278D626F3B7E40033CC05 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
-		C50278DE26F3B8520033CC05 /* ProductEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductEntity.swift; sourceTree = "<group>"; };
+		C50278DE26F3B8520033CC05 /* TransactionEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionEntity.swift; sourceTree = "<group>"; };
 		C50278E426F3C7090033CC05 /* ListModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListModule.swift; sourceTree = "<group>"; };
 		C50278EC26F3C8AC0033CC05 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		C50278F126F3C8B50033CC05 /* ListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
@@ -179,7 +179,7 @@
 		C50278CC26F3B3670033CC05 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				C50278DE26F3B8520033CC05 /* ProductEntity.swift */,
+				C50278DE26F3B8520033CC05 /* TransactionEntity.swift */,
 				C50278CD26F3B3B20033CC05 /* RateEntity.swift */,
 			);
 			path = Entities;
@@ -477,7 +477,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C50278DF26F3B8520033CC05 /* ProductEntity.swift in Sources */,
+				C50278DF26F3B8520033CC05 /* TransactionEntity.swift in Sources */,
 				C50278E526F3C7090033CC05 /* ListModule.swift in Sources */,
 				C50278F226F3C8B50033CC05 /* ListPresenter.swift in Sources */,
 				C50278F726F3C8C20033CC05 /* ListInteractor.swift in Sources */,
