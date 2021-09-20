@@ -8,10 +8,11 @@
 import UIKit
 
 protocol ProductViewProtocol: ProductViewController {
-    func setProduct(product: TransactionEntity)
+    func setProductTransactions(transactions: [TransactionEntity])
 }
 
 class ProductViewController: ProductModule.View, ProductViewProtocol {
+    @IBOutlet fileprivate weak var tableView: UITableView!
     static func create() -> ProductViewController {
         if let productViewController = UIStoryboard(name: "Main", bundle: nil)
             .instantiateViewController(withIdentifier: "ProductViewController")
@@ -21,15 +22,29 @@ class ProductViewController: ProductModule.View, ProductViewProtocol {
         return ProductViewController()
     }
     
-    fileprivate var product: TransactionEntity?
+    fileprivate var transactionsToShow: [TransactionEntity] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        presenter?.getProduct()
+        presenter?.getProductTransactions()
         presenter?.getRates()
     }
     
-    func setProduct(product: TransactionEntity) {
-        self.product = product
+    func setProductTransactions(transactions: [TransactionEntity]) {
+        self.transactionsToShow = transactions
+    }
+}
+
+extension ProductViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return transactionsToShow.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "TransactionCell") as? TransactionCell {
+            cell.configure(with: transactionsToShow[indexPath.row])
+            return cell
+        }
+        return UITableViewCell()
     }
 }

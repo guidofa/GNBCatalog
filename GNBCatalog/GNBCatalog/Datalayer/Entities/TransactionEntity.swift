@@ -11,4 +11,7 @@ struct TransactionEntity: Codable {
     var sku: String
     var amount: String
     var currency: String
+    var amountDecimal: Decimal {
+        return Decimal(string: amount) ?? 0
+    }
 }

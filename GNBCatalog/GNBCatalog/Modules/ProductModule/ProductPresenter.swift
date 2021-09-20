@@ -10,21 +10,59 @@ import Foundation
 protocol ProductPresenterProtocol: NSObject {
     func getRates()
     func getRatesSuccess(data: [RateEntity])
-    func getProduct()
+    func getProductTransactions()
 }
 
 class ProductPresenter: ProductModule.Presenter, ProductPresenterProtocol {
-    var product: TransactionEntity?
+    var transactionsOfProduct: [TransactionEntity] = []
+    var rates: [RateEntity] = []
+    
     func getRates() {
         interactor?.getRates()
     }
     
     func getRatesSuccess(data: [RateEntity]) {
-        print(data)
+        rates = data
+        getSumInEUR()
     }
     
-    func getProduct() {
-        guard let product = product else { return }
-        view?.setProduct(product: product)
+    func getProductTransactions() {
+        view?.setProductTransactions(transactions: transactionsOfProduct)
+    }
+    
+    func getSumInEUR() {
+        changeAllToEur()
+        getSum()
+    }
+        
+    func changeAllToEur() {
+        for index in 0...transactionsOfProduct.count-1 where transactionsOfProduct[index].currency != "EUR" {
+            toEUR(index: index)
+        }
+    }
+    
+    func toEUR(index: Int) {
+        for rate in rates where transactionsOfProduct[index].currency == rate.from && rate.to == "EUR" {
+            changeCurrency(index: index, rate: rate)
+            return
+        }
+        for rate in rates where transactionsOfProduct[index].currency == rate.from {
+            changeCurrency(index: index, rate: rate)
+            toEUR(index: index)
+            return
+        }
+    }
+    
+    func changeCurrency(index: Int, rate: RateEntity) {
+        transactionsOfProduct[index].currency = rate.to
+        transactionsOfProduct[index].amount = "\(transactionsOfProduct[index].amountDecimal * rate.rateDecimal)"
+    }
+    
+    func getSum() {
+        var sum: Decimal = 0
+        for transaction in transactionsOfProduct {
+            sum += transaction.amountDecimal
+        }
+        print("SUM: \(sum)")
     }
 }

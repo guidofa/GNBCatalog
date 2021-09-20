@@ -47,6 +47,13 @@ class ListPresenter: ListModule.Presenter, ListPresenterProtocol {
     }
     
     func goToProductDetail(product: TransactionEntity) {
-        router?.goToProductDetail(product: product)
+        router?.goToProductDetail(transactions: filterTransactions(with: product))
+    }
+    
+    func filterTransactions(with product: TransactionEntity) -> [TransactionEntity] {
+        let transactionsOfProduct: [TransactionEntity] = transactions.filter { (transaction) in
+            return transaction.sku == product.sku
+        }
+        return transactionsOfProduct
     }
 }

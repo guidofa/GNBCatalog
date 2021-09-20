@@ -8,12 +8,13 @@
 import Foundation
 
 protocol ListRouterProtocol: NSObject {
-    func goToProductDetail(product: TransactionEntity)
+    func goToProductDetail(transactions: [TransactionEntity])
 }
 
 class ListRouter: ListModule.Router, ListRouterProtocol {
     
-    func goToProductDetail(product: TransactionEntity) {
-        presenter?.navigation?.pushViewController(ProductModule.assemble(productToShow: product), animated: true)
+    func goToProductDetail(transactions: [TransactionEntity]) {
+        presenter?.navigation?.pushViewController(ProductModule.assemble(transactionsToShow: transactions),
+                                                  animated: true)
     }
 }

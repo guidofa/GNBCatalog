@@ -8,7 +8,7 @@
 import UIKit
 
 class ProductModule: NSObject {
-    static func assemble(productToShow: TransactionEntity) -> ProductViewController {
+    static func assemble(transactionsToShow: [TransactionEntity]) -> ProductViewController {
         let view = ProductViewController.create()
         let presenter = ProductPresenter()
         let interactor = ProductInteractor()
@@ -17,7 +17,7 @@ class ProductModule: NSObject {
         presenter.view = view
         presenter.interactor = interactor
         presenter.router = router
-        presenter.product = productToShow
+        presenter.transactionsOfProduct = transactionsToShow
         view.presenter = presenter
         interactor.presenter = presenter
         router.presenter = presenter        

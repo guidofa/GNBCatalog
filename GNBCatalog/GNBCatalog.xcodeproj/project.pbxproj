@@ -25,6 +25,7 @@
 		C502AE4A26F3B0E200E8C9AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C502AE4826F3B0E200E8C9AA /* LaunchScreen.storyboard */; };
 		C502AE5526F3B0E200E8C9AA /* GNBCatalogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C502AE5426F3B0E200E8C9AA /* GNBCatalogTests.swift */; };
 		C502AE6026F3B0E200E8C9AA /* GNBCatalogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C502AE5F26F3B0E200E8C9AA /* GNBCatalogUITests.swift */; };
+		C532303126F5D13200CB3567 /* TransactionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C532303026F5D13200CB3567 /* TransactionCell.swift */; };
 		C5FAC23C26F4E2120072485D /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FAC23B26F4E2120072485D /* ProductCell.swift */; };
 		C5FAC24526F4E3F80072485D /* ProductModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FAC24426F4E3F80072485D /* ProductModule.swift */; };
 		C5FAC24D26F4E4070072485D /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FAC24C26F4E4070072485D /* ProductViewController.swift */; };
@@ -80,6 +81,7 @@
 		C502AE5B26F3B0E200E8C9AA /* GNBCatalogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GNBCatalogUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C502AE5F26F3B0E200E8C9AA /* GNBCatalogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNBCatalogUITests.swift; sourceTree = "<group>"; };
 		C502AE6126F3B0E200E8C9AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C532303026F5D13200CB3567 /* TransactionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCell.swift; sourceTree = "<group>"; };
 		C5FAC23B26F4E2120072485D /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		C5FAC24426F4E3F80072485D /* ProductModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModule.swift; sourceTree = "<group>"; };
 		C5FAC24C26F4E4070072485D /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
@@ -267,6 +269,14 @@
 			path = GNBCatalogUITests;
 			sourceTree = "<group>";
 		};
+		C532303526F5D13800CB3567 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C532303026F5D13200CB3567 /* TransactionCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		C5FAC23A26F4E2020072485D /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -278,6 +288,7 @@
 		C5FAC24326F4E3D00072485D /* ProductModule */ = {
 			isa = PBXGroup;
 			children = (
+				C532303526F5D13800CB3567 /* Cells */,
 				C5FAC24426F4E3F80072485D /* ProductModule.swift */,
 				C5FAC24C26F4E4070072485D /* ProductViewController.swift */,
 				C5FAC25126F4E40F0072485D /* ProductPresenter.swift */,
@@ -510,6 +521,7 @@
 			files = (
 				C50278DF26F3B8520033CC05 /* TransactionEntity.swift in Sources */,
 				C50278E526F3C7090033CC05 /* ListModule.swift in Sources */,
+				C532303126F5D13200CB3567 /* TransactionCell.swift in Sources */,
 				C50278F226F3C8B50033CC05 /* ListPresenter.swift in Sources */,
 				C5FAC24526F4E3F80072485D /* ProductModule.swift in Sources */,
 				C50278F726F3C8C20033CC05 /* ListInteractor.swift in Sources */,
