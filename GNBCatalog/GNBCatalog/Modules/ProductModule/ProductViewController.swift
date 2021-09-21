@@ -9,10 +9,13 @@ import UIKit
 
 protocol ProductViewProtocol: ProductViewController {
     func setProductTransactions(transactions: [TransactionEntity])
+    func setSum(sum: String)
 }
 
 class ProductViewController: ProductModule.View, ProductViewProtocol {
     @IBOutlet fileprivate weak var tableView: UITableView!
+    @IBOutlet fileprivate weak var sumLabel: UILabel!
+    
     static func create() -> ProductViewController {
         if let productViewController = UIStoryboard(name: "Main", bundle: nil)
             .instantiateViewController(withIdentifier: "ProductViewController")
@@ -27,11 +30,18 @@ class ProductViewController: ProductModule.View, ProductViewProtocol {
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter?.getProductTransactions()
+        title = transactionsToShow[0].sku
         presenter?.getRates()
     }
     
     func setProductTransactions(transactions: [TransactionEntity]) {
         self.transactionsToShow = transactions
+    }
+    
+    func setSum(sum: String) {
+        DispatchQueue.main.async {
+            self.sumLabel.text = sum
+        }
     }
 }
 

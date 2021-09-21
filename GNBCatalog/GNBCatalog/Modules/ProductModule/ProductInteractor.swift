@@ -22,6 +22,7 @@ class ProductInteractor: ProductModule.Interactor, ProductInteractorProtocol {
             case .success(let data):
                 self.parse(jsonData: data)
             case .failure(let error):
+                // Show error
                 print(error.localizedDescription)
             }
         }
@@ -32,7 +33,7 @@ class ProductInteractor: ProductModule.Interactor, ProductInteractorProtocol {
             let decodedData = try JSONDecoder().decode([RateEntity].self, from: jsonData)
             presenter?.getRatesSuccess(data: decodedData)
         } catch {
-            print("Che esta salientdo por aca")
+            // Show error
         }
     }
 }

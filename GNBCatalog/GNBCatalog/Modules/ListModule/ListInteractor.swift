@@ -32,7 +32,7 @@ class ListInteractor: ListModule.Interactor, ListInteractorProtocol {
             let decodedData = try JSONDecoder().decode([TransactionEntity].self, from: jsonData)
             presenter?.getTransactionsSuccess(data: decodedData)
         } catch {
-            print("Che esta salientdo por aca")
+            // Show error
         }
     }
 }

@@ -32,7 +32,7 @@ class ProductPresenter: ProductModule.Presenter, ProductPresenterProtocol {
     
     func getSumInEUR() {
         changeAllToEur()
-        getSum()
+        view?.setSum(sum: "Total: \(getSum(transactions: transactionsOfProduct))")
     }
         
     func changeAllToEur() {
@@ -55,14 +55,21 @@ class ProductPresenter: ProductModule.Presenter, ProductPresenterProtocol {
     
     func changeCurrency(index: Int, rate: RateEntity) {
         transactionsOfProduct[index].currency = rate.to
-        transactionsOfProduct[index].amount = "\(transactionsOfProduct[index].amountDecimal * rate.rateDecimal)"
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
+        formatter.minimumFractionDigits = 2
+        formatter.maximumFractionDigits = 2
+        formatter.roundingMode = .halfEven
+
+        let amount = transactionsOfProduct[index].amountDecimal * rate.rateDecimal
+        transactionsOfProduct[index].amount = formatter.string(for: amount) ?? "0"
     }
     
-    func getSum() {
+    func getSum(transactions: [TransactionEntity]) -> Decimal {
         var sum: Decimal = 0
-        for transaction in transactionsOfProduct {
+        for transaction in transactions {
             sum += transaction.amountDecimal
         }
-        print("SUM: \(sum)")
+        return sum
     }
 }

@@ -9,25 +9,40 @@ import XCTest
 @testable import GNBCatalog
 
 class GNBCatalogTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    var correctRatesUrl: String!
+    var correctTransactionsUrl: String!
+    
+    override func setUp() {
+        super.setUp()
+        correctRatesUrl = "http://quiet-stone-2094.herokuapp.com/rates.json"
+        correctTransactionsUrl = "http://quiet-stone-2094.herokuapp.com/transactions.json"
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
+    override func tearDown() {
+        super.tearDown()
+        correctRatesUrl = nil
+        correctTransactionsUrl = nil
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    func testRatesUrl_shouldpassIfCorrectUrl() {
+        let sut = ProductInteractor()
+        XCTAssertTrue(correctRatesUrl == sut.getRatesURL())
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func testTransactionsUrl_shouldpassIfCorrectUrl() {
+        let sut = ListInteractor()
+        XCTAssertTrue(correctTransactionsUrl == sut.getTransactionsUrl())
     }
-
+    
+    func testGetSum() {
+        // given
+        let sut = ProductPresenter()
+        let transactions = [TransactionEntity(sku: "G2432", amount: "9", currency: "EUR"), TransactionEntity(sku: "G2432", amount: "34.2", currency: "EUR")]
+        
+        // when
+        let result = sut.getSum(transactions: transactions)
+        
+        // then
+        XCTAssertEqual(result, Decimal(43.2))
+    }
 }
