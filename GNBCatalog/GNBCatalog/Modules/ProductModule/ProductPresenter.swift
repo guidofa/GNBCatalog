@@ -32,7 +32,7 @@ class ProductPresenter: ProductModule.Presenter, ProductPresenterProtocol {
     
     func getSumInEUR() {
         changeAllToEur()
-        view?.setSum(sum: "Total: \(getSum(transactions: transactionsOfProduct))")
+        view?.setSum(sum: "Total: \(getSum(transactions: transactionsOfProduct)) EUR")
     }
         
     func changeAllToEur() {
